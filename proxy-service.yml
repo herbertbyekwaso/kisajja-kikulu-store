@@ -1,0 +1,38 @@
+server:
+  port: 8060
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  pattern: 
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+              
+zuul:
+  routes:
+    birigi:
+      path: /birigi/**
+      serviceId: birigi-service
+    department:
+      path: /department/**
+      serviceId: department-service
+    main:
+      path: /main/**
+      serviceId: main-service
+    employee:
+      path: /employee/**
+      serviceId: employee-service
+    organization:
+      path: /organization/**
+      serviceId: organization-service
+    xuser:
+      path: /xuser/**
+      serviceId: xuser-service
+    cycle:
+      path: /cycle/**
+      serviceId: cycle-service
+    saving:
+      path: /saving/**
+      serviceId: saving-service
