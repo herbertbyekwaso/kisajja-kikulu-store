@@ -6,7 +6,6 @@ spring:
     username: root
     password: Hlb_0705126657
     driver-class-name: com.mysql.jdbc.Driver
-    initialization-mode: always
   jpa:
     hibernate:
       naming:
