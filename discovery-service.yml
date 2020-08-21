@@ -1,8 +1,6 @@
 server:
   port: 8761
 eureka:
-  datacenter: Colombo-SriLanka
-  environment: production
   instance:
     hostname: localhost
   client:
