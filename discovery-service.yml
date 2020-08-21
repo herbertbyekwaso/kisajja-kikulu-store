@@ -6,7 +6,5 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-  datacenter: Colombo-SriLanka
-  environment: production
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
